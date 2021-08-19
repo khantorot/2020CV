@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    --text: #000;
+    --bg: #fff;
+    --index: blue;
+    overflow-x: hidden;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+    outline: none;
+}
+
+textarea, button, input{
+    border: 0;
+    outline: 0;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--bg);
+    font-family: 'Montserrat', sans-serif;
+    transition:  background ease-out 0.5s;
+}
+
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(0, 0, 0, 0.0);
+} */
